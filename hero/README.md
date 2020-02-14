@@ -1,4 +1,6 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Getting Started
+First navigate to the hero folder, and run `npm install`. Then proceed
 
 ## Available Scripts
 
