@@ -71,6 +71,7 @@ section {
 	background: white;
 	color: #212121;
 }
+
 .popup {
 	position: fixed;
 	top: 0;
@@ -88,17 +89,10 @@ section {
 	padding: 25px;
 	color: #fff;
 }
-.popup .content h2 {
-	font-size: 28px;
+.popup .content h1 {
+	font-size: 45px;
 	font-weight: 600;
-}
-.popup .content .full-name {
-	margin-bottom: 30px;
-}
-.popup .content .other-info {
-	display: flex;
-	flex-wrap: wrap;
-	margin: 0px -15px 30px;
+	margin-left: 14px;
 }
 .popup .content img {
 	flex: 1 1 50%;
@@ -107,14 +101,15 @@ section {
 }
 .popup .content .info p {
 	flex: 1 1 50%;
-	padding: 15px;
+	padding: 10px;
+	font-size: 30px;
 }
 .popup .content .close {
 	display: inline-block;
 	padding: 15px 30px;
 	font-size: 18px;
 	font-weight: 700;
-
+	margin-left: 14px;
 	background: #14ffec;
 	color: #fff;
 	border-radius: 8px;
