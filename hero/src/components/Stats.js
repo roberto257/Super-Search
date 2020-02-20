@@ -1,6 +1,7 @@
 import React from 'react';
 
 function Stats({ powerstats }) {
+	//Variables for the widths of the bars
 	var intelligence = powerstats['intelligence'] + '%';
 	var strength = powerstats['strength'] + '%';
 	var power = powerstats['power'] + '%';
@@ -9,7 +10,10 @@ function Stats({ powerstats }) {
 	var combat = powerstats['combat'] + '%';
 
 	return (
-		<section className='stats' style={{ boxSizing: 'border-box' }}>
+		<section
+			className='stats'
+			style={{ boxSizing: 'border-box', fontSize: '20px' }}
+		>
 			<div
 				className='intelligence'
 				style={{ width: '100%', backgroundColor: '#212121' }}
@@ -22,7 +26,8 @@ function Stats({ powerstats }) {
 						textAlign: 'right',
 						paddingTop: '10px',
 						paddingBottom: '10px',
-						backgroundColor: '#FFF',
+						paddingRight: '10px',
+						backgroundColor: '#c6c7c5',
 						color: '#000'
 					}}
 				>
@@ -42,7 +47,8 @@ function Stats({ powerstats }) {
 						textAlign: 'right',
 						paddingTop: '10px',
 						paddingBottom: '10px',
-						backgroundColor: '#FFF',
+						paddingRight: '10px',
+						backgroundColor: '#c6c7c5',
 						color: '#000'
 					}}
 				>
@@ -62,7 +68,8 @@ function Stats({ powerstats }) {
 						textAlign: 'right',
 						paddingTop: '10px',
 						paddingBottom: '10px',
-						backgroundColor: '#FFF',
+						paddingRight: '10px',
+						backgroundColor: '#c6c7c5',
 						color: '#000'
 					}}
 				>
@@ -82,7 +89,8 @@ function Stats({ powerstats }) {
 						textAlign: 'right',
 						paddingTop: '10px',
 						paddingBottom: '10px',
-						backgroundColor: '#FFF',
+						paddingRight: '10px',
+						backgroundColor: '#c6c7c5',
 						color: '#000'
 					}}
 				>
@@ -101,7 +109,8 @@ function Stats({ powerstats }) {
 						textAlign: 'right',
 						paddingTop: '10px',
 						paddingBottom: '10px',
-						backgroundColor: '#FFF',
+						paddingRight: '10px',
+						backgroundColor: '#c6c7c5',
 						color: '#000'
 					}}
 				>
@@ -120,7 +129,8 @@ function Stats({ powerstats }) {
 						textAlign: 'right',
 						paddingTop: '10px',
 						paddingBottom: '10px',
-						backgroundColor: '#FFF',
+						paddingRight: '10px',
+						backgroundColor: '#c6c7c5',
 						color: '#000'
 					}}
 				>

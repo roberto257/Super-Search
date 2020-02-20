@@ -4,8 +4,6 @@ import Search from './components/Search';
 import Results from './components/Results';
 import Popup from './components/Popup';
 
-import './App.css';
-
 function App() {
 	/* Set our state. S is what will be searched and added to the end of the url,
   results is an array of heroes that are found in the search. No hero selected at the start  */
@@ -22,8 +20,9 @@ function App() {
 	//Function to search for whoever is inputted
 	const search = e => {
 		if (e.key === 'Enter') {
-			axios(proxyurl + apiurl + 'search/' + state.s).then(({ data }) => {
+			axios(apiurl + 'search/' + state.s).then(({ data }) => {
 				let results = data.results;
+
 				//If we get an empty response, so we don't get an error in react
 				if (typeof results === 'undefined') {
 					setState(prevState => {
@@ -47,6 +46,8 @@ function App() {
 	const openPopup = id => {
 		axios(proxyurl + apiurl + id).then(({ data }) => {
 			let result = data;
+			//Show info in console
+			console.table(result);
 			setState(prevState => {
 				return { ...prevState, selected: result };
 			});
